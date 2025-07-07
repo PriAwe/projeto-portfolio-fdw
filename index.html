@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <title>MyName - CV</title>
+
+    <!-- Links do Font Awesome no CDN JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Folha de estilos CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <!-- Menu Lateral -->
+    <div class="left-menu">
+      <div class="perfil-lateral" id="nome-menu-lateral">
+        <img src="imagens/Profile.jpeg" alt="Foto Perfil" />
+        <p class="fonte-nome">Pricila Awe Ribeiro</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li class="selecionado fonte-montserrat" id="btn-menu-sobre"><i class="fa-solid fa-user"></i><span></span>Sobre</li>
+          <li class="fonte-montserrat" id="btn-menu-formacao"><i class="fa-solid fa-graduation-cap"></i><span></span>Formação e Certificados</li>
+          <li id="btn-menu-portfolio"><i class="fa-solid fa-suitcase"></i><span></span>Portfólio</li>
+          <li id="btn-menu-contato"><i class="fa-solid fa-envelopes-bulk"></i><span></span>Contato</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Seção principal -->
+    <main>
+      <!-- Seção Sobre -->
+      <div class="hidden" id="secao-sobre">
+        <!-- Seção de Perfil -->
+        <div class="perfil-main">
+          <img src="imagens/Profile.jpeg" alt="Foto Perfil" />
+          <p class="nome fonte-nome">Pricila Awe Ribeiro</p>
+          <p class="descricao fonte-montserrat">Graduanda de Análise e Desenvolvimento de Sistemas</p>
+          <p class="sobre">"Sou a Pricila, uma estudante de Análise e Desenvolvimento de Sistemas, super entusiasmada com minha migração para a área de tecnologia, onde tudo é novidade. Estou adorando aprender e desenvolver minhas habilidades, imergindo em um aprendizado contínuo, onde cada nova linguagem e ferramenta se conecta. Estou desvendando os segredos do HTML, CSS e JavaScript para criar interfaces, mergulhando no Java para o desenvolvimento de sistemas, entendendo o MySQL para a Gestão de Banco de Dados e afiando minha Lógica de Programação com o poder do Python. Uma verdadeira. O universo tech me conquistou!"</p>
+        </div>
+
+        <!-- Seção de Habilidades -->
+        <div>
+          <h2>Habilidades</h2>
+          <ul class="habilidades">
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>MySQL</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Seção Formação -->
+      <div class="secao-formacao hidden" id="secao-formacao">
+        <!-- Informações principais -->
+        <div class="formacao-main">
+          <h2>Formação:</h2>
+          <ul>
+            <li><i class="fa-solid fa-leaf"></i><span></span>Tecnólogo em <strong>Análise e Desenvolvimento de Sistemas - Uninter - Conclusão em Dez/2026</strong></li>
+          </ul>
+        </div>
+
+        <!-- Idiomas -->
+        <div>
+          <h2>Idiomas:</h2>
+          <ul>
+            <li><i class="fa-solid fa-leaf"></i><span></span>Português - Nativo</li>
+            <li><i class="fa-solid fa-leaf"></i><span></span>Inglês - Intermediário</li>
+            <li><i class="fa-solid fa-leaf"></i><span></span>Espanhol - Básico</li>
+          </ul>
+        </div>
+
+        <!-- Certificações -->
+        <div>
+          <h2>Cursos e Certificações:</h2>
+          <ul>
+            <li><i class="fa-solid fa-leaf"></i><span></span>Em construção</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Seção Portfólio -->
+      <div class="secao-portfolio hidden" id="secao-portfolio">
+        <h2>Portfólio:</h2>
+        <p>Aqui estão alguns dos meus principais projetos</p>
+
+        <div class="card-list">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-img">
+              <img src="./imagens/python-logo.svg" alt="Python" />
+            </div>
+            <div class="card-body">
+              <h3>Programas em Terminal</h3>
+              <p>Programas desenvolvidos durante a graduação. São 4 programas construídos em Python, com menus de navegação. Os programas rodam no terminal.</p>
+              <a href="https://github.com/PriAwe/exercicios-de-log-de-prog-e-alg"><i class="fa-brands fa-github"></i><span></span> Repositório GitHub<span></span><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-img">
+              <img src="./imagens/java-logo.svg" alt="Java" />
+            </div>
+            <div class="card-body">
+              <h3>Programa em Terminal</h3>
+              <p>Programa desenvolvido durante a graduação. Neste trabalho, utilizamos Programação Orientada a Objetos, em Java. O software roda no terminal.</p>
+              <a href="https://github.com/PriAwe/trabalho-poo"><i class="fa-brands fa-github"></i><span></span> Repositório GitHub<span></span><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção Contato -->
+      <div class="secao-contato" id="secao-contato">
+        <h2>Contato:</h2>
+        <p>Caso queira entrar em contato comigo, basta enviar uma mensagem através do formulário abaixo.</p>
+
+        <!-- Formulário -->
+        <form>
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome" />
+          </div>
+
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="text" id="e-mail" placeholder="Seu melhor e-mail" />
+          </div>
+
+          <div>
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
+          </div>
+
+          <button>Enviar Mensagem</button>
+        </form>
+
+        <div class="informacoes">
+          <h4>Informações para Contato:</h4>
+          <p>E-mail: pricila_awe@yahoo.com.br</p>
+          <p>Linkedin: https://www.linkedin.com/in/pricila-ribeiro-809b6ab3/</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Script do Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

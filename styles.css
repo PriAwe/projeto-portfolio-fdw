@@ -1,0 +1,285 @@
+/* Configurações Globais, ou para todos os elementos do projeto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3,
+h4,
+label {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #00712d;
+}
+
+#btn-menu-sobre,
+#btn-menu-formacao,
+#btn-menu-portfolio,
+#btn-menu-contato {
+  color: #00712d;
+}
+
+h4 {
+  margin-bottom: 12px;
+}
+
+.fonte-montserrat {
+  font-family: "Montserrat"
+}
+
+.fonte-nome {
+  color: #00712d;
+}
+
+/* Configuração do container */
+.container {
+  font-family: "Montserrat", cursive;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #fcf8f8;
+}
+
+/* Configuração do menu lateral */
+
+.left-menu {
+  padding: 20px;
+  font-size: 24px;
+}
+
+.left-menu img {
+  width: 48px;
+  border-radius: 50%;
+}
+
+.perfil-lateral {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.perfil-lateral:hover {
+  cursor: pointer;
+  background-color: #72bf78;
+  border-radius: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+nav li {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+nav li:hover {
+  background-color: #72bf78;
+}
+
+nav ul li span {
+  padding-right: 8px;
+}
+
+/* Configuração da seção principal das páginas */
+main {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Configuração da seção de foto, nome, descrição e sobre mim */
+.perfil-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  justify-items: center;
+  align-items:center;
+  margin-bottom: 24px;
+}
+
+.perfil-main img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.nome {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.descricao {
+  margin-bottom: 16px;
+}
+
+.sobre {
+  font-size: 20px;
+  text-align:left;
+}
+
+/* Configurações da seção de habilidades */
+.habilidades {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+.habilidades li {
+  padding: 16px;
+  background-color: #b4e380;
+  color: #005114;
+  min-width: 8rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2rem;
+  font-size: 18px;
+}
+
+/* Configurações da seção de formação, certificados e idiomas */
+.secao-formacao {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.secao-formacao ul {
+  list-style-type: none;
+}
+
+.secao-formacao li {
+  font-size: 20px;
+}
+
+.secao-formacao li span {
+  padding-right: 12px;
+}
+
+/* Configurações da Seção de Portfólio */
+.secao-portfolio p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.secao-portfolio .card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.secao-portfolio .card-list .card {
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.secao-portfolio .card-list .card .card-img {
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 8px;
+  background-color: #72bf78;
+  border-radius: 8px;
+}
+
+.secao-portfolio .card-list .card img {
+  max-width: 180px;
+}
+
+.secao-portfolio .card-list .card .card-body {
+  padding: 8px;
+}
+
+.secao-portfolio .card-list .card .card-body h3 {
+  margin-bottom: 8px;
+}
+
+.secao-portfolio .card-list .card .card-body p {
+  text-align: justify;
+}
+
+.secao-portfolio .card-list .card .card-body a {
+  text-decoration: none;
+  color: #00712d;
+  background-color: #b4e380;
+  display: inline-block;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 24px;
+  margin: auto;
+}
+
+.secao-portfolio .card-list .card .card-body a span {
+  padding: 4px;
+}
+
+.secao-portfolio .card-list .card .card-body a:hover {
+  background-color: #72bf78;
+}
+
+/* Configurações da Seção de Contato */
+
+.secao-contato p {
+  margin-bottom: 32px;
+}
+
+.secao-contato form {
+  max-width: 25%;
+  margin-bottom: 24px;
+}
+
+.secao-contato label {
+  margin-bottom: 12px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.secao-contato input,
+.secao-contato textarea {
+  display: block;
+  border: 1px solid #72bf78;
+  padding: 8px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 18px;
+  font-family: "Montserrat", cursive;
+  font-size: 16px;
+}
+
+.secao-contato textarea {
+  height: 160px;
+}
+
+.secao-contato button {
+  background-color: #b4e380;
+  border-radius: 8px;
+  padding: 12px 8px;
+  border: none;
+  box-shadow: 1px;
+  color: #00712d;
+  font-family: "Montserrat", cursive;
+}
+
+.secao-contato button:hover {
+  background-color: #72bf78;
+  cursor: pointer;
+}
+
+/* Utilitários */
+.selecionado {
+  background-color: #b4e380;
+}
+
+.hidden {
+  display: none;
+}
